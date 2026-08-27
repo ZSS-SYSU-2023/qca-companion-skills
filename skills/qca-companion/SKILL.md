@@ -224,8 +224,37 @@ metadata:
 - 杜刚, 韩召. (2024). 组态视角下患者在线问诊选择的驱动因素研究. *系统管理学报*, 33(5), 1270–1283.
 - Zhang, R. S., & Ramesh, B. (2024). A configurational perspective on design elements and user governance engagement in blockchain platforms. *Information Systems Journal*, 34(4), 1264–1323. https://doi.org/10.1111/isj.12494
 - Palmer, C., Niemand, T., Stöckmann, C., Kraus, S., & Kailer, N. (2019). The interplay of entrepreneurial orientation and psychological traits in explaining firm performance. *Journal of Business Research*, 102, 173–184.
-- **英文顶刊 fsQCA 范例（10 篇，FT/UTD/ABS 精选，IMA「研究主线」遴选，卷期页码已核验）**：Douglas, Shepherd, & Prentice (2020, JBV)；Nobre, Packard, & Clark (2026, ETP)；Du, Liu, Kim, & Li (2024, ETP)；Gabrielsson, Galan, & Politis (2025, JBR)；Campbell & Fiss (2026, AMR)；Sheng, Fu, Jeyaraj, & Sun (2025, JBR)；Judge 等 (2015, JMS)；Ordanini, Parasuraman, & Rubera (2014, JSR)；Yang, Lander, Turturea, & Heugens (2024, JMS)；Campbell & Sirmon (2016, AMJ)。完整 APA 见 `CITATION.md` §二。
+- **英文顶刊 fsQCA 范例（10 篇，FT/UTD/ABS 精选，IMA「研究主线」遴选，卷期页码已核验）英文顶刊 fsQCA 范例（共 27 篇：IMA「研究主线」10 篇 + 用户上传扩展 17 篇，FT/UTD/ABS 精选，卷期页码经 Crossref 逐条核验）**：Douglas, Shepherd, & Prentice (2020, JBV)；Nobre, Packard, & Clark (2026, ETP)；Du, Liu, Kim, & Li (2024, ETP)Du, Liu, Kim, & Li (2025, ETP)；Gabrielsson, Galan, & Politis (2025, JBR)；Campbell & Fiss (2026, AMR)；Sheng, Fu, Jeyaraj, & Sun (2025, JBR)；Judge 等 (2015, JMS)；Ordanini, Parasuraman, & Rubera (2014, JSR)；Yang, Lander, Turturea, & Heugens (2024, JMS)；Campbell & Sirmon (2016, AMJ)。完整 APA 见 `CITATION.md` §二。
 
 > **来源材料总览（本套互补技能包蒸馏自）**：组态理论与 QCA 方法的公开论文、教材与软件手册（如 Ragin 1987/2008、Schneider & Wagemann 2012、Fiss 2011、杜运周等公开文献、Du & Kim 2021、Du et al. 2024 等）；方法要点均经领域共识与公开文献交叉验证。各 S 技能内附公开文献出处，可溯源核对。
 >
 > **v1.1 融合说明（2026-08）**：本轮补充马鸿佳 两篇 fsQCA/混合方法实证（南开管理评论 2024 N=392 资源编排；管理世界 2024 N=495 混合方法打破数据孤岛），强化"并发因果""经典理论数字化扩展""线性相关+组态互补"三类论点；GitHub 调研确认 R `QCA` 包 v3.25（CCubes 算法）与 `QCAcluster` 为权威代码底座（见 S5 §2.9）；SkillHub 市场暂无独立 fsQCA 技能，故以 R 开源生态 + 本地 8 技能包作为互补主体。本套技能包与 `qca-analysis-expert`（执行层）保持"指引/校对 vs 执行"互补边界，不重复实现计算。
+
+## 9. 执行环境与资源速查（参考层 → 执行层 → 软件 → 在线资源）
+
+### 9.1 三层衔接（"打通"结构）
+- **参考层（本包 8 技能）**：方法论决策、写作规范、结果判读与校对。
+- **执行层（本地技能 `qca-analysis-expert`）**：校准、真值表、布尔最小化与代码级执行（本机已就位：`~/.workbuddy/skills/qca-analysis-expert/`）。凡调用本包技能做实证分析，须同步加载该技能执行，并按本包各闸门回传结果校对。
+- **软件层**：R 生态为事实标准（`QCA` 包，CCubes 算法），fs/QCA 3.0 桌面版作图形界面互补；Stata 适合配套的 DiD/PSM 等匹配类稳健性分析，但无官方 QCA 模块。
+
+### 9.2 软件状态与安装（本机实测 2026-08-28）
+| 软件 | 本机状态 | 获取/安装 |
+|---|---|---|
+| R（≥4.x）+ `QCA` 包 | ❌ 未安装 | 装 R 后：`install.packages(c("QCA","admisc","SetMethods","QCAcluster"))`；手册见 github.com/dusadrian/QCA |
+| fs/QCA 3.0 桌面版 | ❌ 未安装 | fsqca.com 免费下载（Ragin & Davey；GUI，适合教学演示与 R 双轨互验） |
+| Stata | ✅ 已装（StataNow 19 MP） | 无官方 QCA 模块；继续用于 DiD/PSM/IV 等稳健性配套，QCA 主分析走 R/fsQCA |
+| Python | 可选 | PyPI `qca` 包成熟度低，不建议作主力 |
+
+### 9.3 在线资源
+- **COMPASSS**（compasss.org）：QCA 官方学术网络——working papers、最佳实践、软件与课程清单。
+- **fsqca.com**：fs/QCA 软件下载与 Ragin 官方手册。
+- **R `QCA`**：github.com/dusadrian/QCA（CCubes 算法、参考手册、ChangeLog）。
+- **QCAcluster**：ingorohlfing.github.io/QCAcluster（面板/聚类 QCA 工具、教程与 vignettes）。
+- **SetMethods**（CRAN）：Oana & Schneider (2024) QCA 稳健性检验协议（RTP）的官方实现，对应本包稳健性章节。
+- **中文资源**：杜运周团队 QCA 工作坊系列；机械工业出版社三本译著（《QCA设计原理与应用》《重新设计社会科学研究》《QCA方法从入门到精通》）。
+
+### 9.4 最小可跑通路径（建议）
+1. 安装 R → `install.packages("QCA")` → 按本包 qca-fsqca-practice §2 操作序列用 `calibrate()/truthTable()/minimize()` 复现一次全流程；
+2. 需 GUI 或与合著者软件一致时，加装 fs/QCA 3.0 做双轨互验（结果应一致）；
+3. 面板/时序数据加载 `QCAcluster`；稳健性协议加载 `SetMethods`（对应 qca-advanced-frontiers §4、qca-configurational-theory §2 阈值线）。
+

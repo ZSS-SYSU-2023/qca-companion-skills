@@ -97,6 +97,10 @@ metadata:
 | Leppänen, George, & Alexy (2023) | *Academy of Management Journal* | 新商业模式×竞争战略×环境的价值驱动组态如何导向高绩效 | 示范"商业模式新颖性"的条件化：新颖性只有与战略/环境要素组合时才有效应（组态化权变） |
 | Gupta, Crilly, & Greckhamer (2020) | *Strategic Management Journal* | 利益相关者参与战略×国别制度对公司绩效的组态影响（大样本） | 示范跨层级（战略×制度）条件组合与大样本组态分析的可行性 |
 | Howell, Bingham, & Hendricks (2022) | *Organization Science* | 单干创业 vs. 联合创业的选择组态 | 示范"创业团队形成"的组态化：资源/经验/行业条件共同决定单干或联合 |
+| Hersel, Gangloff, & Shropshire (2023) | *Academy of Management Journal* | 财务违规后"危机沟通×高管解聘"的一致性→股东信任（fsQCA；一致性 0.80、PRI 0.70） | 示范"事件型研究"的组态操作化：把"组合要素间一致性（coherence）"构念化为条件 |
+| Muñoz, Kimmitt, & Dimov (2020) | *Journal of Management Studies* | "新常态"下亲社会合作社的治理形式与创新（fsQCA；频数 1、一致性 0.789–0.889） | 示范小样本频数阈值设 1 的适用条件与辩护写法 |
+| White, Lockett, Currie, & Hayton (2021) | *Journal of Management Studies* | 混合情境×管理实践→组织绩效（fsQCA；频数 2/4 分层、PRI≥0.75） | 示范频数阈值分层调整、大频数稳健性检验与严格 PRI 线 |
+| Lewellyn & Muller-Kahle (2022) | *Journal of Management* | 女性 vs. 男性 CEO 的薪酬决定组态（fsQCA；频数 3、一致性 0.82/0.90） | 示范"分组分别分析→对照因果非对称"的性别/子样本比较设计 |
 
 ## 3. 研究设计实操要点
 
