@@ -238,11 +238,11 @@ metadata:
 - **软件层**：R 生态为事实标准（`QCA` 包，CCubes 算法），fs/QCA 3.0 桌面版作图形界面互补；Stata 适合配套的 DiD/PSM 等匹配类稳健性分析，但无官方 QCA 模块。
 
 ### 9.2 软件状态与安装（本机实测 2026-08-28）
-| 软件 | 本机状态 | 获取/安装 |
+| 软件 | 本机状态 | 说明 |
 |---|---|---|
-| R（≥4.x）+ `QCA` 包 | ❌ 未安装 | 装 R 后：`install.packages(c("QCA","admisc","SetMethods","QCAcluster"))`；手册见 github.com/dusadrian/QCA |
-| fs/QCA 3.0 桌面版 | ❌ 未安装 | fsqca.com 免费下载（Ragin & Davey；GUI，适合教学演示与 R 双轨互验） |
-| Stata | ✅ 已装（StataNow 19 MP） | 无官方 QCA 模块；继续用于 DiD/PSM/IV 等稳健性配套，QCA 主分析走 R/fsQCA |
+| R 4.6.1（E://R//R-4.6.1，RStudio：E://RStudio） | ✅ 已装；`QCA` 3.25 + `admisc` + `SetMethods` + `QCAcluster` 已于 2026-08-28 装入 E 盘 library 并实测跑通 | Windows 二进制安装，全部落在 E 盘；手册 github.com/dusadrian/QCA |
+| fs/QCA 3.0 桌面版 | ⚠️ Prefetch 有运行痕迹（FSQCA.EXE），但当前 C/D/E 盘未定位到 exe（疑便携版已删/在移动介质） | 需要时从 fsqca.com 免费重装（Ragin & Davey；GUI，可作 R 双轨互验） |
+| Stata | ✅ 已装（StataNow 19 MP） | 无官方 QCA 模块；继续用于 DiD/PSM/IV 等稳健性配套 |
 | Python | 可选 | PyPI `qca` 包成熟度低，不建议作主力 |
 
 ### 9.3 在线资源
@@ -254,7 +254,7 @@ metadata:
 - **中文资源**：杜运周团队 QCA 工作坊系列；机械工业出版社三本译著（《QCA设计原理与应用》《重新设计社会科学研究》《QCA方法从入门到精通》）。
 
 ### 9.4 最小可跑通路径（建议）
-1. 安装 R → `install.packages("QCA")` → 按本包 qca-fsqca-practice §2 操作序列用 `calibrate()/truthTable()/minimize()` 复现一次全流程；
-2. 需 GUI 或与合著者软件一致时，加装 fs/QCA 3.0 做双轨互验（结果应一致）；
-3. 面板/时序数据加载 `QCAcluster`；稳健性协议加载 `SetMethods`（对应 qca-advanced-frontiers §4、qca-configurational-theory §2 阈值线）。
+1. ✅ **已打通**：直接运行本仓库 `examples/r_qca_minimal_demo.R`（csQCA + fsQCA 双轨端到端，2026-08-28 于 R 4.6.1 + QCA 3.25 实测通过，输出经典 Lipset 解 `DEV*STB`）；
+2. 需 GUI 或与合著者软件一致时，重装 fs/QCA 3.0（fsqca.com）做双轨互验（结果应一致）；
+3. 面板/时序数据加载 `QCAcluster`；稳健性协议加载 `SetMethods`（`pof()`/RTP，对应 qca-advanced-frontiers §4、qca-configurational-theory §2 阈值线）。
 
