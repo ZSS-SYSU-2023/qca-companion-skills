@@ -241,7 +241,7 @@ metadata:
 | 软件 | 本机状态 | 说明 |
 |---|---|---|
 | R 4.6.1（E://R//R-4.6.1，RStudio：E://RStudio） | ✅ 已装；`QCA` 3.25 + `admisc` + `SetMethods` + `QCAcluster` 已于 2026-08-28 装入 E 盘 library 并实测跑通 | Windows 二进制安装，全部落在 E 盘；手册 github.com/dusadrian/QCA |
-| fs/QCA 3.0 桌面版 | ⚠️ Prefetch 有运行痕迹（FSQCA.EXE），但当前 C/D/E 盘未定位到 exe（疑便携版已删/在移动介质） | 需要时从 fsqca.com 免费重装（Ragin & Davey；GUI，可作 R 双轨互验） |
+| fs/QCA 4.0 桌面版 | ✅ 已定位：`E://张少帅-科研项目推进//2025//2025方法学习//QCA//2024.8.10fsqca工作坊学习材料//软件安装包及复现数据//fsqca40//fsqca//fsqca.exe`（Qt GUI） | 双击即用；可作 R 双轨互验。同目录另备《管理世界》公开论文复现数据（CSV，含预校准模糊集列，2026-08-28 已用 R/QCA 实测全链路跑通） |
 | Stata | ✅ 已装（StataNow 19 MP） | 无官方 QCA 模块；继续用于 DiD/PSM/IV 等稳健性配套 |
 | Python | 可选 | PyPI `qca` 包成熟度低，不建议作主力 |
 
@@ -255,6 +255,6 @@ metadata:
 
 ### 9.4 最小可跑通路径（建议）
 1. ✅ **已打通**：直接运行本仓库 `examples/r_qca_minimal_demo.R`（csQCA + fsQCA 双轨端到端，2026-08-28 于 R 4.6.1 + QCA 3.25 实测通过，输出经典 Lipset 解 `DEV*STB`）；
-2. 需 GUI 或与合著者软件一致时，重装 fs/QCA 3.0（fsqca.com）做双轨互验（结果应一致）；
+2. GUI 双轨互验：fs/QCA 4.0 已就位（路径见 §9.2），与 R 结果应一致；真实数据练习可用本地《管理世界》公开论文复现 CSV（含预校准 fz 列，read.csv 时注意 GBK 编码）；
 3. 面板/时序数据加载 `QCAcluster`；稳健性协议加载 `SetMethods`（`pof()`/RTP，对应 qca-advanced-frontiers §4、qca-configurational-theory §2 阈值线）。
 
