@@ -2,7 +2,7 @@
 # R/QCA 最小可跑通示例（配合本包 qca-fsqca-practice §2 阅读运行）
 # 依赖：R >= 4.x；install.packages(c("QCA","admisc"))
 # 运行：Rscript examples/r_qca_minimal_demo.R
-# 验证环境：R 4.6.1 + QCA 3.25（E:/R/R-4.6.1），2026-08-28 实测通过
+# 验证环境：R 4.6.1 + QCA 3.25（本机实测），2026-08-28 实测通过
 # ============================================================
 suppressMessages(library(QCA))
 

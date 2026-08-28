@@ -1,9 +1,9 @@
 ---
 name: qca-companion
 description: >
-  QCA/fsQCA 互补校对官（强制触发）。凡用户要求用 QCA/fsQCA（csQCA/mvQCA/fsQCA）做分析，或加载/调用 qca-analysis-expert
-  及任何 fsQCA 工具/技能，必须同步加载本技能做互补校对：分阶段闸门引导任务执行、准确性红线校验、
-  流程纠偏、完成性核验。与 qca-analysis-expert（技术执行层）形成"校对 vs 执行"互补，不重复计算。
+  QCA/fsQCA 分析的配套校对技能。凡涉及 QCA、fsQCA 或调用 qca-analysis-expert 时加载：
+  按分阶段闸门走流程，检查一致性阈值、PRI、频数等红线，发现流程或结果有问题及时纠正，交付前整体再核一遍。
+  本技能只校对、不算数，计算交给执行层。
 license: MIT
 metadata:
   version: "1.1.0"
@@ -240,8 +240,8 @@ metadata:
 ### 9.2 软件状态与安装（本机实测 2026-08-28）
 | 软件 | 本机状态 | 说明 |
 |---|---|---|
-| R 4.6.1（E://R//R-4.6.1，RStudio：E://RStudio） | ✅ 已装；`QCA` 3.25 + `admisc` + `SetMethods` + `QCAcluster` 已于 2026-08-28 装入 E 盘 library 并实测跑通 | Windows 二进制安装，全部落在 E 盘；手册 github.com/dusadrian/QCA |
-| fs/QCA 4.0 桌面版 | ✅ 已定位：`E://张少帅-科研项目推进//2025//2025方法学习//QCA//2024.8.10fsqca工作坊学习材料//软件安装包及复现数据//fsqca40//fsqca//fsqca.exe`（Qt GUI） | 双击即用；可作 R 双轨互验。同目录另备《管理世界》公开论文复现数据（CSV，含预校准模糊集列，2026-08-28 已用 R/QCA 实测全链路跑通） |
+| R 4.6.1（本机安装于非系统盘，路径从略） | ✅ 已装；`QCA` 3.25 + `admisc` + `SetMethods` + `QCAcluster` 已于 2026-08-28 装入 E 盘 library 并实测跑通 | Windows 二进制安装，全部落在 E 盘；手册 github.com/dusadrian/QCA |
+| fs/QCA 4.0 桌面版 | ✅ 已定位（本机路径从略，见本地环境记录）（Qt GUI） | 双击即用；可作 R 双轨互验。同目录另备《管理世界》公开论文复现数据（CSV，含预校准模糊集列，2026-08-28 已用 R/QCA 实测全链路跑通） |
 | Stata | ✅ 已装（StataNow 19 MP） | 无官方 QCA 模块；继续用于 DiD/PSM/IV 等稳健性配套 |
 | Python | 可选 | PyPI `qca` 包成熟度低，不建议作主力 |
 

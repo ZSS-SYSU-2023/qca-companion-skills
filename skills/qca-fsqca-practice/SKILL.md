@@ -1,6 +1,6 @@
 ---
 name: qca-fsqca-practice
-description: fsQCA软件人读操作指引与结果判读避坑互补参考（校准、真值表、解的类型、coverage/consistency、案例归属）。执行 fsQCA 分析时须同步加载 qca-companion 做互补校对。
+description: fsQCA 软件操作与结果解读的实践参考：从校准、真值表到三种解的判读，顺带讲清常见误用和容易踩的坑。跑分析时搭配 qca-companion 一并校对。
 license: MIT
 metadata:
   version: "1.1.0"

@@ -1,6 +1,6 @@
 ---
 name: qca-writing-publication
-description: QCA方法论文写作、投稿与评审意见回应互补参考指引。执行 fsQCA 分析时须同步加载 qca-companion 做互补校对。
+description: QCA 论文的写作与投稿参考：结构与结果汇报的规范，以及如何回应审稿人对组态方法的疑问。分析时搭配 qca-companion 校对。
 license: MIT
 metadata:
   version: "1.1.0"

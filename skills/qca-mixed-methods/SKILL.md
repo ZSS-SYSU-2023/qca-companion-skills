@@ -1,6 +1,6 @@
 ---
 name: qca-mixed-methods
-description: 扎根理论+QCA混合方法互补参考指引（方法互补逻辑、先后顺序、三角验证、衔接要点）。执行 fsQCA 分析时须同步加载 qca-companion 做互补校对。
+description: 扎根理论与 QCA 怎么结合：先做什么、后做什么、两边如何互相验证。适合打算用质性材料提炼条件、再做组态分析的研究。分析时搭配 qca-companion 校对。
 license: MIT
 metadata:
   version: "1.1.0"

@@ -1,6 +1,6 @@
 ---
 name: qca-theory-building
-description: 基于QCA的理论构建、扩展与应用互补参考指引。执行 fsQCA 分析时须同步加载 qca-companion 做互补校对。
+description: 怎么把组态结果写成理论贡献：从因果配方到命题的提炼、经典理论的组态化改造与边界条件。分析时搭配 qca-companion 校对。
 license: MIT
 metadata:
   version: "1.1.0"

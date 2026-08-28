@@ -1,6 +1,6 @@
 ---
 name: qca-configurational-theory
-description: QCA 组态理论与方法基础互补参考指引（因果复杂性、cs/mv/fsQCA、集合论、适用边界）。执行 fsQCA 分析时须同步加载 qca-companion 做互补校对。
+description: QCA 的底层逻辑与适用边界：因果复杂性、集合论基础，清晰集/多值集/模糊集的比较。先弄懂这些，选条件和解读结果才不容易跑偏；分析时请配合 qca-companion 校对。
 license: MIT
 metadata:
   version: "1.1.0"

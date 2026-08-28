@@ -1,6 +1,6 @@
 ---
 name: qca-advanced-frontiers
-description: QCA前沿议题互补参考（动态/时序QCA、战略组态、复杂环境、增长模式、集合论中介）。执行 fsQCA 分析时须同步加载 qca-companion 做互补校对。
+description: QCA 前沿做法参考：时间与面板数据的动态 QCA、战略与制度因素的组态、NCA 与集合论中介等新近进展。做分析时搭配 qca-companion 使用，结果先过一遍校对。
 license: MIT
 metadata:
   version: "1.1.0"

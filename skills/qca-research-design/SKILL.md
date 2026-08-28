@@ -1,6 +1,6 @@
 ---
 name: qca-research-design
-description: QCA研究设计与科研写作实践互补参考指引（应用现状、变量操作化、案例选择、样本量、写作实践）。执行 fsQCA 分析时须同步加载 qca-companion 做互补校对。
+description: 用 QCA 做管理学研究的选题与设计参考：案例与条件怎么选、样本多大合适、校准怎么交代，以及写作里常见的毛病。分析时搭配 qca-companion 校对。
 license: MIT
 metadata:
   version: "1.1.0"
